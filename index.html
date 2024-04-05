@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <style type="text/css">
+        body {
+            color: #666666;
+            background-color: #fef4f4;
+            animation: backgroundChange 5s ease 0s 1 normal;
+            -webkit-animation: backgroundChange 5s ease 0s 1 normal;
+        }
+
+        main,
+        nav {
+            animation: fadeIn 3s ease 0s 1 normal;
+            -webkit-animation: fadeIn 3s ease 0s 1 normal;
+        }
+
+        #nav {
+            background-color: #f5b1aa;
+        }
+
+        #news-head {
+            border-right: 1px solid #000;
+        }
+
+        #news-head-meta {
+            font-size: .6rem;
+        }
+
+        #news-day {
+            margin: 0;
+        }
+
+        #news-description {
+            margin: 0;
+        }
+
+        .uk-card {
+            border-radius: 10px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes backgroundChange {
+            0% {
+                background-color: #f5b1aa;
+            }
+
+            100% {
+                background-color: #fef4f4;
+            }
+        }
+
+        @-webkit-keyframes backgroundChange {
+            0% {
+                background-color: #f5b1aa;
+            }
+
+            100% {
+                background-color: #fef4f4;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav id="nav" class="uk-navbar-container" uk-sticky>
+        <div class="uk-container">
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">Logo</a>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="uk-container">
+
+        <img src="https://placebear.com/1280/1080">
+
+        <div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin">
+            <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-background-default uk-padding">
+                        <h3>イベント</h3>
+                        <div>イベント名</div>
+
+                        <h3>開催日時</h3>
+                        <div>
+                            2024年11月2日（土）
+                            10:00～13:00
+                        </div>
+
+                        <h3>入場方式</h3>
+                        <div>アンソロ購入方式？サークル無料</div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-background-default uk-padding">
+                        <h3>開催会場</h3>
+                        <div>どっかの場所</div>
+                        <h3>コスプレ</h3>
+                        <div>不可</div>
+                        <h3>募集総計</h3>
+                        <div>xxxSP</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-background-default uk-padding">サークル参加についてリンク</div>
+                    <div class="uk-background-default uk-padding">サークル申し込みのリンク</div>
+                    <div class="uk-background-default uk-padding">一般参加についてリンク</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin">
+            <div uk-grid>
+                <div class="uk-width-auto@m">
+                    <span class="uk-text-lead">NEWS</span> <span id="news-head-meta" class="uk-text-meta">最新情報</span>
+                </div>
+                <div class="uk-width-expand@m">
+                    <p id="news-day">2024.04.03</p>
+                    <p id="news-description">企画ページ公開</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-flex">
+            <div class="uk-width-2-3@m uk-margin-auto uk-margin-auto-vertical">
+                <h1 class="uk-text-center" uk-parallax="opacity: 0,1; y: -100,0;  end: 90vh + 90%;">イベントについて</h1>
+                <p>
+                    本サイトは、xxxの告知サイトです。<br>
+                    当企画はファン有志によるものであり、公式や特定の個人、団体、その他版権関係者とは一切関係はございません。
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/css/uikit.min.css" rel="stylesheet">
+</body>
+
+</html>
